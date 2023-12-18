@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image';
+import DarkMode from './DarkMode';
 import Logo from '../../../assets/website/logo.png'
 import { FaCaretDown } from 'react-icons/fa'
 import { FaCartShopping } from 'react-icons/fa6'
@@ -39,7 +40,7 @@ const DropdownLinks = [
 
 const Navbar = () =>{
   return (
-    <div className='shadow-lg '>
+    <div className='shadow-lg bg-white dark:bg-gray-900 dark:text-white duration-200'>
       <div className="container py-3 sm:py-0">
         <div className="flex justify-between items-center">
           <div className='font-bold text-2xl sm:text-3xl flex gap-2'>
@@ -48,6 +49,9 @@ const Navbar = () =>{
             </a>
             DevBooks</div>
           <div className='flex items-center justify-between gap-4'>
+            <div>
+              <DarkMode />
+            </div>
             <ul className='items-center gap-4 hidden sm:flex'>
               {Menu.map((menu) => (
                 <li key={menu.id}>
