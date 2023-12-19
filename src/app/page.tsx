@@ -4,6 +4,7 @@ import Hero from './components/Hero/Hero'
 import BestBooks from './components/BestBooks/Bestbooks'
 import Banner from './components/Banner/Banner'
 import AppStore from './components/AppStore/AppStore'
+import AllBooks from './components/AllBooks/AllBooks'
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
         <BestBooks />
         <Banner />
         <AppStore />
+        <AllBooks />
       </div>
     </>
   )

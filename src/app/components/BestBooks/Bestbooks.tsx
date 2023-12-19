@@ -40,7 +40,7 @@ const BestBooks = () => {
                     <h1 className="text-3xl font-bold">Melhores Livros</h1>
                     <p className="text-xs text-gray-400 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas quae sapiente velit, officia suscipit voluptatibus magnam voluptatem.</p>
                 </div>
-                {/*Header Section*/}
+                {/*Card Section*/}
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 md:gap-5 place-items-center">
                     {booksData.map((book) =>(
                        <div key={book.id} className="rounded-2xl bg-white dark:bg-gray-800 hover:bg-primary dark:hover:bg-secondary hover:text-white relative shadow-xl duration-high group max-w-[300px]">
