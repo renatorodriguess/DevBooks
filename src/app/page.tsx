@@ -1,13 +1,15 @@
 import Image from 'next/image'
 import Navbar from './components/NavBar/Navbar'
 import Hero from './components/Hero/Hero'
+import BestBooks from './components/BestBooks/Bestbooks'
 
 export default function Home() {
   return (
     <>
-      <div>
+      <div className='bg-white dark:bg-gray-900 dark:text-white duration-200'>
         <Navbar />
         <Hero />
+        <BestBooks />
       </div>
     </>
   )
