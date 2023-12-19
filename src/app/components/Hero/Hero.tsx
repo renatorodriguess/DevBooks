@@ -7,6 +7,30 @@ import Book2 from '../../../assets/books/book2.jpg'
 import Book3 from '../../../assets/books/book3.jpg'
 import Vector from '../../../assets/website/blue-pattern.png'
 
+const ImageList = [
+    {
+      id: 1,
+      img: Book1,
+      title: "His Life will forever be Changed",
+      description:
+        "lorem His Life will forever be Changed dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    },
+    {
+      id: 2,
+      img: Book2,
+      title: "Who's there",
+      description:
+        "Who's there lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    },
+    {
+      id: 3,
+      img: Book3,
+      title: "Lost Boy",
+      description:
+        "Lost Boy, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    },
+  ];
+
 const Hero = () => {
     const [imageId, setImageId] = useState(Book1);
     const [title, setTitle] = useState("His life will forever be changed");
@@ -40,12 +64,39 @@ const Hero = () => {
                         </div>
                     </div>
                     {/* image area */}
-                    <div className="min-h-[450px] flex justify-center items-center relative order-1 sm:order-2 ">
+                    <div className="min-h-[450px] sm:min-h-[450px] flex justify-center items-center relative order-1 sm:order-2 ">
                         {/* main image */}
                         <div className="max-w-full h-64 sm:h-[450px] overflow-hidden flex justify-center items-center">
-                        <Image className="w-[390px] h-[390px] sm:[h-450px] sm[w-450px] sm:scale-125 object-contain mx-auto" src={imageId} alt=""/>
+                        <Image className="w-[310px] h-[310px] sm:[h-450px] sm:w-[450px] sm:scale-125 object-contain mx-auto" src={imageId} alt=""/>
                         </div>
-                        {/* main image */}
+                        <div>
+                            {/* other image */}
+                            <div className="flex lg:flex-col lg:top-1/2 lg:-translate-y-1/2 lg:py-2 justify-center gap-4 absolute -bottom-[40px] lg:-right-1 bg-white rounded-full">
+                                {ImageList.map((data) =>(
+                                    <Image 
+                                        key={data.id}
+                                        src={data.img} alt=""
+                                        className="max-w-[100px] h-[100px] object-contain inline-block hover:scale-110 duration-200"
+                                        onClick={() =>{
+                                            setImageId(
+                                                data.id === 1 ? Book1 :
+                                                data.id === 2 ? Book2 :
+                                                Book3
+                                            );
+                                            setTitle(data.title);
+                                            setDescription(data.description)
+                                        }}
+                                    
+                                    
+                                    
+                                    />
+                                ))
+
+                                }
+                            </div>
+                        </div>
+                        
+                        
                     </div>
                 </div>
             </div>
