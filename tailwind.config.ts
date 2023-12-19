@@ -9,6 +9,9 @@ const config: Config = {
   darkMode: "class",
   theme: {
     extend: {
+      backgroundImage: {
+        'hero-banner': "url('../assets/website/blue-pattern.png')"
+      },
       colors: {
         primary: "#1182c5",
         secondary: "#2aa6df"
