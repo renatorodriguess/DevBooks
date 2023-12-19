@@ -2,6 +2,7 @@ import Image from 'next/image'
 import Navbar from './components/NavBar/Navbar'
 import Hero from './components/Hero/Hero'
 import BestBooks from './components/BestBooks/Bestbooks'
+import Banner from './components/Banner/Banner'
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
         <Navbar />
         <Hero />
         <BestBooks />
+        <Banner />
       </div>
     </>
   )
