@@ -6,6 +6,7 @@ import darkPng from '../../../assets/website/dark-mode-button.png'
 import lightPng from '../../../assets/website/light-mode-button.png'
 
 const DarkMode = () => {
+  const isLocalStorageAvailable = typeof window !== 'undefined' && window.localStorage;
 const [theme, setTheme] = useState(localStorage.getItem("theme") || "light")
 
     useEffect(() => {

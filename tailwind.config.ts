@@ -11,7 +11,7 @@ const config: Config = {
     extend: {
       backgroundImage: {
         'hero-banner': "url('../assets/website/blue-pattern.png')",
-        'appstore-banner': "url('../assets/website/banner.jpg')"
+        'app-banner': "url('../assets/website/banner.jpg')"
       },
       colors: {
         primary: "#1182c5",
