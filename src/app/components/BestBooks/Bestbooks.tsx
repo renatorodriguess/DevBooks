@@ -43,7 +43,7 @@ const BestBooks = () => {
                 {/*Card Section*/}
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 md:gap-5 place-items-center">
                     {booksData.map((book) =>(
-                       <div key={book.id} className="rounded-2xl bg-white dark:bg-gray-800 hover:bg-primary dark:hover:bg-secondary hover:text-white relative shadow-xl duration-high group max-w-[300px]">
+                       <div key={book.id} data-aos="zoom-in" className="rounded-2xl bg-white dark:bg-gray-800 hover:bg-primary dark:hover:bg-secondary hover:text-white relative shadow-xl duration-high group max-w-[300px]">
                             <div className="h-[100px]">
                                 <Image src={book.img} alt=""
                                 className="max-w-[100px] block mx-auto transform -translate-y-1/4 group-hover:scale-105 duration-300 shadow-md"

@@ -86,7 +86,8 @@ const Hero = () => {
                 <div className="min-h-[450px] sm:min-h-[450px] flex justify-center items-center relative order-1 sm:order-2 ">
                   <div className="h-[300px] sm:h-[450px] overflow-hidden flex justify-center items-center">
                     <Image
-                      
+                      data-aos="zoom-in"
+                      data-aos-once="true"
                       src={imageId}
                       alt="biryani img"
                       className="w-[300px] h-[300px] sm:h-[450px] sm:w-[450px] sm:scale-125 object-contain mx-auto"
