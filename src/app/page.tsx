@@ -5,6 +5,7 @@ import Banner from './components/Banner/Banner'
 import AppStore from './components/AppStore/AppStore'
 import AllBooks from './components/AllBooks/AllBooks'
 import Testimonial from './components/Testimonial/Testimonial'
+import Footer from './components/Footer/Footer'
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
         <AppStore />
         <AllBooks />
         <Testimonial />
+        <Footer />
       </div>
     </>
   )
