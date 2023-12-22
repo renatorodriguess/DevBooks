@@ -76,7 +76,7 @@ const Testimonial = () => {
                     <p className="text-sm bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">
                         O que os clientes dizem?
                     </p>
-                    <h1 className="text-3xl font-bold">Depoimentos</h1>
+                    <h1 className="text-3xl font-bold text-black dark:text-white">Depoimentos</h1>
                     <p className="text-xs text-gray-400 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas quae sapiente velit, officia suscipit voluptatibus magnam voluptatem.</p>
                 </div> 
                 {/* Card Section */}
