@@ -1,29 +1,46 @@
 'use client'
 
-import React, {createContext} from "react";
+import React from "react";
 import Image from "next/image";
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import Person1 from '../../../assets/website/Person1.png'
+import Person2 from '../../../assets/website/Person2.png'
+import Person3 from '../../../assets/website/Person3.png'
+import Person4 from '../../../assets/website/Person4.png'
+import Person5 from '../../../assets/website/Person5.png'
 
 const testimonialData = [
   {
     id: 1,
-    name: "Victor",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque reiciendis inventore iste ratione ex alias quis magni at optio",
-    img: "https://picsum.photos/101/101",
+    name: "Victor Henrique",
+    text: "Incrível como uma livro de 1975 pode ser tão atual e mostrar tão bem os erros cometidos até hoje, se você como leitor ter um minimo de inteligencia e conseguir abstrair coisas que obviamente estão datadas, você irá ver o quanto o autor foi assertivo dentro do contexto da época.",
+    img: Person1,
   },
   {
     id: 2,
-    name: "Satya Narayan",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque reiciendis inventore iste ratione ex alias quis magni at optio",
-    img: "https://picsum.photos/102/102",
+    name: "Carolina Lima",
+    text: "Este livro é uma coletânea de abordagens e comportamentos que vão te ajudar a sair da mediocridade e se tornar um excelente programador. Você vai perceber que quase todos, se não todos, os programadores que admira segue ideias apresentadas aqui. Por isto, me arrisco a dizer que este é, provavelmente, o livro mais importante que você vai ler em toda sua carreira.",
+    img: Person2,
   },
   {
     id: 3,
-    name: "Sachin Tendulkar",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque reiciendis inventore iste ratione ex alias quis magni at optio",
-    img: "https://picsum.photos/103/103",
+    name: "Felipe Oliveira",
+    text: "O livro ensina bem e contém exercícios para fixar o conhecimento do livro. Também pode ser usado como consulta caso já saiba de algum tópico avançado. Recomendo fortemente se tiver dificuldades em algoritmos e estruturas de dados como eu tenho. Leia calmamente e só passe para o próximo tópico quando entender completamente.",
+    img: Person3,
+  },
+  {
+    id: 4,
+    name: "Juliana Martins",
+    text: "O livro traz um contexto exceente do ambiente de desenvolvimento de sistemas e programação. As dicas de proficcionais experientes sobre como construir e manter um bom código de programa sao muito valiosas e aplicáveis ao dia a dia. Tem bons exemplos que audam a entender as dicas propostas.",
+    img: Person4,
+  },
+  {
+    id: 5,
+    name: "Matheus Rodrigues",
+    text: "O livro claramente é uma junção rica das histórias de vida, atitudes, experiências pessoais e profissionais que ele considera ou poderiam ser considerados fundamentos de uma conduta ética e não ética, mostrando situações e comportamentos corriqueiros por outro ângulo, com certeza este livro traz conteúdo de valor, pelo autor, já se sabe o que esperar.",
+    img: Person5,
   },
 ]; 
 
@@ -34,7 +51,7 @@ const Testimonial = () => {
     arrows: false,
     infinite: true,
     speed: 500,
-    // slidesToShow: 2,
+    slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
@@ -76,8 +93,7 @@ const Testimonial = () => {
                     <p className="text-sm bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">
                         O que os clientes dizem?
                     </p>
-                    <h1 className="text-3xl font-bold text-black dark:text-white">Depoimentos</h1>
-                    <p className="text-xs text-gray-400 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas quae sapiente velit, officia suscipit voluptatibus magnam voluptatem.</p>
+                    <h1 className="text-4xl font-bold text-black dark:text-white mt-3">Depoimentos</h1>
                 </div> 
                 {/* Card Section */}
                 <div data-aos="zoom-in">

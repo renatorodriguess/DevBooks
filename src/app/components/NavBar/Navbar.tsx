@@ -5,7 +5,9 @@ import Logo from '../../../assets/website/logo.png'
 import { FaCaretDown } from 'react-icons/fa'
 import { FaCartShopping } from 'react-icons/fa6'
 import React, { useState } from "react";
-import handleOrderPopup from '../Popup/Popup'
+import Modal from '../Modal/Modal';
+
+
 
 const Menu = [
   {
@@ -15,7 +17,7 @@ const Menu = [
   },
   {
     id: 2,
-    name: "Best Saller",
+    name: "Best Seller",
     link: "#/services",
   }
 ];
@@ -39,10 +41,14 @@ const DropdownLinks = [
 ]
 
 const Navbar = () =>{
-  const [orderPopup, setOrderPopup] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const handleOrderPopup = () => {
-    setOrderPopup(!orderPopup);
+  const handleOpenModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
   };
   
   return (
@@ -75,12 +81,12 @@ const Navbar = () =>{
                   Quick Links
                   <span>
                     <FaCaretDown 
-                    className='transition duration-300 group-hover:rotate-180'
+                    className='transition-all duration-300 group-hover:rotate-180'
                     />
                   </span>
                 </a>
                 {/* dropdown Link section */}
-                <div className='absolute -left-9 z-[10px] hidden group-hover:block text-black bg-white p-2 shadow-sm w-[150px] '>
+                <div className='absolute -left-9 z-[9999px] hidden group-hover:block text-black bg-white p-2 shadow-sm w-[150px] '>
                   <ul>
                     {
                       DropdownLinks.map((data) => (
@@ -95,13 +101,14 @@ const Navbar = () =>{
                 </div>
               </li>
             </ul>
-            <button onClick={() => handleOrderPopup()} className='bg-gradient-to-r from-primary to-secondary text-white px-4 py-1 rounded-full flex items-center gap-3 hover:scale-105 duration-300'>
+            <button  onClick={handleOpenModal} className='bg-gradient-to-r from-primary to-secondary text-white px-4 py-1 rounded-full flex items-center gap-3 hover:scale-105 duration-300'>
               Peça
                 <FaCartShopping className='text-xl text-white drop-shadow-sm cursor-pointer' />
             </button>
           </div>
         </div>
       </div>
+      <Modal isOpen={isModalOpen} onClose={handleCloseModal} />
     </div>
   );
 };

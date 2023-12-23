@@ -30,16 +30,9 @@ const booksData = [
       author: "Chad Fowler",
     },
     {
-      id: 4,
-      img: Book7,
-      title: "Refatoração: Aperfeiçoando o Design de Códigos Existentes",
-      rating: 4.9,
-      author: "Martin Fowler",
-    },
-    {
       id: 5,
       img: Book8,
-      title: "Controlando Versões com Git e GitHub",
+      title: "Controlando Versões com Git",
       rating: 4.8,
       author: "Alexandre Aquiles",
     },
@@ -51,19 +44,18 @@ const AllBooks = () => {
             <div className="container py-10">
                 {/* Header */}
                 <div data-aos="slide-up" className="text-center mb-20 max-w-[400px] mx-auto">
-                    <p className="text-sm bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary text-black dark:text-white">
-                        Tendência de Livros
+                    <p className="text-sm bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">
+                        Livros em Alta
                     </p>
-                    <h1 className="text-3xl font-bold text-black dark:text-white">Outros Livros Que Talvez Você Goste</h1>
-                    <p className="text-xs text-gray-400 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas quae sapiente velit, officia suscipit voluptatibus magnam voluptatem.</p>
+                    <h1 className="text-4xl mt-3 font-bold text-black dark:text-white">Outras Leituras Sugeridas</h1>
                 </div>
                 {/* Card */}
                 <div data-aos="slide-up">
-                    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols4 lg:grid-cols-5 place-items-center gap-5">
+                    <div className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 place-items-center gap-14">
                         {booksData.map((data) => (
                             <div key={data.id} className="space-y-3 hover:scale-110 duration-200">
                                 <Image src={data.img} alt=""
-                                className="h-[220px] w-[150px] object-cover rounded-md"
+                                className="h-[230px] w-[150px] object-cover rounded-md"
                                 />
                                 <div>
                                     <h2 className="text-black dark:text-white font-semibold">{data.title}</h2>

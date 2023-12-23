@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import PlayStoreImg from '../../../assets/website/play_store.png';
 import AppStoreImg from '../../../assets/website/app_store.png';
-import Banner from "../../../assets/website/board.png";
+import Banner from "../../../assets/website/app-banner.jpg";
 
 const AppStore = () => {
     const bannerImg = {
@@ -26,7 +26,7 @@ const AppStore = () => {
                   className="space-y-6 max-w-xl mx-auto"
                 >
                   <h1 data-aos="slide-up" className="text-2xl text-center sm:text-left sm:text-4xl font-semibold ">
-                    Read Books at Your Fingertips
+                   Baixe no aplicativo e Leia agora.
                   </h1>
                   <div data-aos="slide-up" className="flex flex-wrap justify-center items-center">
                     <a href="#">

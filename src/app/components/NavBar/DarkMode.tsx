@@ -6,7 +6,6 @@ import darkPng from '../../../assets/website/dark-mode-button.png'
 import lightPng from '../../../assets/website/light-mode-button.png'
 
 const DarkMode = () => {
-  const isLocalStorageAvailable = typeof window !== 'undefined' && window.localStorage;
 const [theme, setTheme] = useState(localStorage.getItem("theme") || "light")
 
     useEffect(() => {
@@ -22,7 +21,7 @@ const [theme, setTheme] = useState(localStorage.getItem("theme") || "light")
 
     return(
         <>
-            <div className="relative">
+            <div className="relative md:ml-7">
                 <Image src={darkPng} alt="Light Image" 
                 className={`w-12 cursor-pointer drop-shadow-[1px_1px_1px_rgba(0,0,0,0.1)] transition-all duration-300 absolute right-0
                 ${theme === 'dark' ? "opacity-0" : "opacity-100"}`}

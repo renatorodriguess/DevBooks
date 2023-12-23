@@ -10,8 +10,8 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        'hero-banner': "url('../assets/website/blue-pattern.png')",
-        'app-banner': "url('../assets/website/banner.jpg')"
+        'hero-banner': "url('../assets/website/hero-banner.jpg')",
+        'app-banner': "url('../assets/website/app-banner.jpg')"
       },
       colors: {
         primary: "#1182c5",

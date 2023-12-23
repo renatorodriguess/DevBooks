@@ -13,7 +13,7 @@ const ImageList = [
       img: Book1,
       title: "Código Limpo",
       description:
-        "lorem His Life will forever be Changed dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "Mesmo um código ruim pode funcionar. Mas se ele não for limpo, pode acabar com uma empresa de desenvolvimento. Perdem-se a cada ano horas incontáveis e recursos importantes devido a um código mal escrito. Mas não precisa ser assim.O renomado especialista em software, Robert C. Martin, apresenta um paradigma revolucionário com Código limpo.",
     },
     {
       id: 2,
@@ -21,7 +21,7 @@ const ImageList = [
       img: Book2,
       title: "O Programador Pagmático",
       description:
-        "Who's there lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "O Programador Pragmático ilustra as melhores práticas e as principais armadilhas do desenvolvimento de software. Destinado a todos envolvidos com programação, de codificadores iniciantes a programadores experientes e gerentes responsáveis por projetos de software, apresenta lições simples que promovem rápidas melhorias na produtividade pessoal, precisão e satisfação profissional.",
     },
     {
       id: 3,
@@ -29,14 +29,14 @@ const ImageList = [
       img: Book3,
       title: "O Mítico Homem-Mês",
       description:
-        "Lost Boy, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "Poucos livros sobre gestão de projetos de software têm sido tão influentes e perenes quanto O Mítico Homem-Mês. Com uma rica mistura de fatos sobre engenharia de software e opiniões que provocam a reflexão, Frederick Brooks oferece sua visão para todos aqueles que lidam com a gestão de projetos complexos. Os ensaios deste livro vêm diretamente da experiência de Frederick como gerente de projetos para a família de computadores System/360 da IBM e, posteriormente, com o OS/360, seu massivo sistema de software.",
     },
   ];
 
 const Hero = () => {
     const [imageId, setImageId] = useState(Book1);
     const [title, setTitle] = useState("Código Limpo");
-    const [description, setDescription ] = useState("Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, ea nisi fugit suscipit rerum dignissimos porro id adipisci sequi tempore.");
+    const [description, setDescription ] = useState("Mesmo um código ruim pode funcionar. Mas se ele não for limpo, pode acabar com uma empresa de desenvolvimento. Perdem-se a cada ano horas incontáveis e recursos importantes devido a um código mal escrito. Mas não precisa ser assim.O renomado especialista em software, Robert C. Martin, apresenta um paradigma revolucionário com Código limpo.");
     const [author, setAuthor] = useState("Robert C. Martin")
 
     const bgImage = {
@@ -52,7 +52,7 @@ const Hero = () => {
             style={bgImage}
           >
             <div className="container pb-8 sm:pb-0">
-              <div className="grid grid-cols-1 sm:grid-cols-2">
+              <div className="grid grid-cols-1 sm:grid-cols-2 ">
                 {/* text content section */}
                 <div
                   data-aos-once="true"
@@ -62,7 +62,7 @@ const Hero = () => {
                     data-aos="zoom-out"
                     data-aos-duration="500"
                     data-aos-once="true"
-                    className="text-5xl text-black dark:text-white sm:text-6xl lg:text-7xl font-bold"
+                    className="text-5xl text-white dark:text-white sm:text-6xl lg:text-7xl font-bold"
                   >
                     {title}
                     <p className="bg-clip-text text-transparent bg-gradient-to-b from-primary text-right text-sm to-secondary">
@@ -73,7 +73,7 @@ const Hero = () => {
                     data-aos="slide-up"
                     data-aos-duration="500"
                     data-aos-delay="100"
-                    className="text-sm text-black dark:text-white"
+                    className="text-sm text-white dark:text-white"
                   >
                     {description}
                   </p>

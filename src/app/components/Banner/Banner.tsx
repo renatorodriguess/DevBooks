@@ -19,8 +19,8 @@ const Banner = () => {
                     </div>
                     {/* Text Content Section */}
                     <div data-aos="slide-up" className="flex flex-col justify-center gap-6 sm:pt-0">
-                        <h1 className="text-3xl sm:text-4xl font-bold text-black dark:text-white">Livraria nas suas palmas</h1>
-                        <p className="text-sm text-gray-500 tracking-wide leading-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. At maiores dolor culpa vero placeat consectetur voluptatem.</p>
+                        <h1 className="text-3xl sm:text-4xl font-bold text-black dark:text-white">Livraria nas suas mãos</h1>
+                        <p className="text-sm text-gray-500 tracking-wide leading-5">Livros de programação agora! Explore títulos exclusivos e aprimore suas habilidades de codificação. #Programação #LivrosTech</p>
                         <div className="flex flex-col gap-4 text-black dark:text-white">
                             <div className="flex items-center gap-4">
                                 <GrSecure

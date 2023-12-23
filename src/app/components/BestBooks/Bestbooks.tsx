@@ -1,11 +1,11 @@
 'use client'
-import React from "react";
+import React, {useState} from "react";
 import Image from "next/image";
 import Book1 from "../../../assets/books/book1.jpg";
 import Book2 from "../../../assets/books/book2.jpg";
 import Book3 from "../../../assets/books/book3.jpg";
 import { FaStar } from "react-icons/fa6";
-
+import Modal from '../Modal/Modal';
 
 const booksData = [
     {
@@ -30,19 +30,24 @@ const booksData = [
   ];
 
 const BestBooks = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleOpenModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+  };
     return (
         <>
           <div className="py-10">
             <div className="container">
               <div className="text-center mb-20 max-w-[400px] mx-auto">
                 <p className="text-sm bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary ">
-                  Trending Books
+                  Best Sellers
                 </p>
                 <h1 className="text-3xl font-bold text-black dark:text-white">Os Mais Vendidos</h1>
-                <p className="text-xs text-gray-400">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Perspiciatis delectus architecto error nesciunt,
-                </p>
               </div>
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-20 md:gap-5 place-items-center">
                 {booksData.map((data) => (
@@ -67,9 +72,9 @@ const BestBooks = () => {
                       </div>
                       <h1 className="text-black dark:text-white group-hover:text-white text-xl font-bold duration-300 line-clamp-2">{data.title}</h1>
                       <p className="text-gray-500 group-hover:text-white duration-300 text-sm line-clamp-2">
-                        {data.descripiton}
+                        Clique no botão abaixo e adquira o seu.
                       </p>
-                      <button
+                      <button onClick={handleOpenModal}
                         className="bg-primary hover:scale-105 duration-300 text-white py-1 px-4 rounded-full mt-4 group-hover:bg-white group-hover:text-primary"
                       >
                         Peça Agora
@@ -79,6 +84,7 @@ const BestBooks = () => {
                 ))}
               </div>
             </div>
+            <Modal isOpen={isModalOpen} onClose={handleCloseModal} />
           </div>
         </>
       );

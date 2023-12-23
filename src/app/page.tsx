@@ -9,7 +9,7 @@ import AppStore from './components/AppStore/AppStore'
 import AllBooks from './components/AllBooks/AllBooks'
 import Testimonial from './components/Testimonial/Testimonial'
 import Footer from './components/Footer/Footer';
-import Popup from './components/Popup/Popup'
+import Modal from './components/Modal/Modal'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 
@@ -17,8 +17,8 @@ export default function Home() {
 
   const [orderPopup, setOrderPopup] = React.useState(false);
 
-  const handleOrderPopup = () => {
-    setOrderPopup(!orderPopup)
+  const handleOrderPopup = (isOpen: boolean) => {
+    setOrderPopup(isOpen);
   }
 
   React.useEffect(() => {
@@ -41,8 +41,7 @@ export default function Home() {
         <AllBooks/>
         <Testimonial/>
         <Footer/>
-        <Popup handleOrderPopup={handleOrderPopup}
-          orderPopup={orderPopup}/>
+        <Modal isOpen={orderPopup} onClose={() => handleOrderPopup(false)}/>
       </div>
     </>
   )
