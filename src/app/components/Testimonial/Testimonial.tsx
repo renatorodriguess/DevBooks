@@ -15,31 +15,31 @@ const testimonialData = [
   {
     id: 1,
     name: "Victor Henrique",
-    text: "Incrível como uma livro de 1975 pode ser tão atual e mostrar tão bem os erros cometidos até hoje, se você como leitor ter um minimo de inteligencia e conseguir abstrair coisas que obviamente estão datadas, você irá ver o quanto o autor foi assertivo dentro do contexto da época.",
+    text: "Incrível como uma livro de 1975 pode ser tão atual e mostrar tão bem os erros cometidos até hoje, se você como leitor ter um minimo de inteligencia e conseguir abstrair coisas que obviamente estão datadas, você irá ver o quanto o autor foi assertivo.",
     img: Person1,
   },
   {
     id: 2,
     name: "Carolina Lima",
-    text: "Este livro é uma coletânea de abordagens e comportamentos que vão te ajudar a sair da mediocridade e se tornar um excelente programador. Você vai perceber que quase todos, se não todos, os programadores que admira segue ideias apresentadas aqui. Por isto, me arrisco a dizer que este é, provavelmente, o livro mais importante que você vai ler em toda sua carreira.",
+    text: "Este livro é uma coletânea de abordagens e comportamentos que vão te ajudar a sair da mediocridade e se tornar um excelente programador. Você vai perceber que quase todos, se não todos, os programadores que admira segue ideias apresentadas aqui.",
     img: Person2,
   },
   {
     id: 3,
     name: "Felipe Oliveira",
-    text: "O livro ensina bem e contém exercícios para fixar o conhecimento do livro. Também pode ser usado como consulta caso já saiba de algum tópico avançado. Recomendo fortemente se tiver dificuldades em algoritmos e estruturas de dados como eu tenho. Leia calmamente e só passe para o próximo tópico quando entender completamente.",
+    text: "O livro ensina bem e contém exercícios para fixar o conhecimento do livro. Também pode ser usado como consulta caso já saiba de algum tópico avançado. Recomendo fortemente se tiver dificuldades em algoritmos e estruturas de dados como eu tenho.",
     img: Person3,
   },
   {
     id: 4,
     name: "Juliana Martins",
-    text: "O livro traz um contexto exceente do ambiente de desenvolvimento de sistemas e programação. As dicas de proficcionais experientes sobre como construir e manter um bom código de programa sao muito valiosas e aplicáveis ao dia a dia. Tem bons exemplos que audam a entender as dicas propostas.",
+    text: "O livro traz um contexto exceente do ambiente de desenvolvimento de sistemas e programação. As dicas de proficcionais experientes sobre como construir e manter um bom código de programa sao muito valiosas e aplicáveis ao dia a dia. Muito Bom!",
     img: Person4,
   },
   {
     id: 5,
     name: "Matheus Rodrigues",
-    text: "O livro claramente é uma junção rica das histórias de vida, atitudes, experiências pessoais e profissionais que ele considera ou poderiam ser considerados fundamentos de uma conduta ética e não ética, mostrando situações e comportamentos corriqueiros por outro ângulo, com certeza este livro traz conteúdo de valor, pelo autor, já se sabe o que esperar.",
+    text: "O livro claramente é uma junção rica das histórias de vida, atitudes, experiências pessoais e profissionais que ele considera ou poderiam ser considerados fundamentos de uma conduta ética e não ética, me supreendi com o livro. Excelente a leitura.",
     img: Person5,
   },
 ]; 
@@ -89,7 +89,7 @@ const Testimonial = () => {
         <div className="pb-10">
             <div className="container">
                 {/* Header */}
-                <div data-aos="slide-up" className="text-center mb-20 max-w-[400px] mx-auto">
+                <div data-aos="fade-up" className="text-center mb-20 max-w-[400px] mx-auto">
                     <p className="text-sm bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">
                         O que os clientes dizem?
                     </p>
@@ -102,7 +102,7 @@ const Testimonial = () => {
                         <div key={item.id}>
                           <div className="flex flex-col gap-4 shadow-lg py-8 px-6 mx-4 rounded-xl dark:bg-gray-800 bg-primary/10 relative">
                             <div>
-                              <Image src={item.img} alt="" width={80} height={80} className="rounded-full object-cover" />
+                              <Image src={item.img} alt=""className="w-20 h-20 rounded-full object-cover" />
                             </div>
                             <div>
                               <p className="text-gray-500 text-sm">{item.text}</p>

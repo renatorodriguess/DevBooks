@@ -78,7 +78,7 @@ const Navbar = () =>{
                 <a href="/#"
                 className='flex h-[72px] items-center gap-[2px]'
                 >
-                  Quick Links
+                  Links
                   <span>
                     <FaCaretDown 
                     className='transition-all duration-300 group-hover:rotate-180'
