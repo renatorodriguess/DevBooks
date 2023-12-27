@@ -29,7 +29,7 @@ const booksData = [
     },
   ];
 
-const BestBooks = () => {
+const Books = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const handleOpenModal = () => {
@@ -90,4 +90,4 @@ const BestBooks = () => {
       );
 }
 
-export default BestBooks;
+export default Books;
