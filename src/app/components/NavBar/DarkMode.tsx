@@ -6,17 +6,26 @@ import darkPng from '../../../assets/website/dark-mode-button.png'
 import lightPng from '../../../assets/website/light-mode-button.png'
 
 const DarkMode = () => {
-const [theme, setTheme] = useState(localStorage.getItem("theme") || "light")
+const [theme, setTheme] = useState (() => {
+  if (typeof window !== 'undefined') {
+    return localStorage.getItem('theme') || 'light';
+  } else {
+    return 'light';
+  }
+})
 
-    useEffect(() => {
-      if(theme === "dark") {
-        document.documentElement.classList.add("dark");
-        localStorage.setItem("theme", "dark");
-      }else {
-        document.documentElement.classList.remove("dark");
-        localStorage.setItem("theme", "light")
-      }
-    }, [theme])
+useEffect(() => {
+  if (typeof window !== 'undefined') {
+    if (theme === 'dark') {
+      document.documentElement.classList.add('dark');
+      localStorage.setItem('theme', 'dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+      localStorage.setItem('theme', 'light');
+    }
+  }
+}, [theme]);
+
     
 
     return(
