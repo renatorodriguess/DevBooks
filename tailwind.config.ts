@@ -31,6 +31,6 @@ const config: Config = {
       },
     },
   },
-  plugins: [require("daisyui")],
+  plugins: [],
 }
 export default config
