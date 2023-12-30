@@ -14,8 +14,6 @@
 <!-- PROJECT LOGO -->
 <br /> 
 
-  <h3 align="center">Explore the cosmos!</h3>
-
   <p align="center">
     Welcome to DevBooks – an immersive landing page dedicated to my passion of reading, meticulously crafted with an array of interactive components and cutting-edge functionalities. Explore the bookstore with engaging visuals and seamless user experiences. This project uses ReactJS, NextJS, Tailwind, and TypeScript, all converging harmoniously to provide a journey into the universe of programming books.
     <br />
