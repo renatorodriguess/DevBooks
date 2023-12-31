@@ -99,7 +99,7 @@ Don't forget to give the project a star! Thanks again!
 <!-- CONTACT -->
 ## Contact
 
-Renato Rodrigues - [@omatheusant](https://linkedin.com/in/omatheussant) - renato072002@gmail.com
+Renato Rodrigues - [@renatorodriguess](https://linkedin.com/in/renato-rodrigues-2240251b5/) - renato072002@gmail.com
 
 Project Link: [Vercel](https://devbooks-project.vercel.app)
 
