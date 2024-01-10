@@ -71,11 +71,9 @@ The DevBooks is a project that represents my passion for the code and the books.
 ## What I learn
 This project was a good challenge to improve my skills and challenge myself. 
 
-👨‍🚀 I've gained proficiency in leveraging the Axios library for handling API requests, enhancing code stability and organization significantly.
+👨‍🚀 The use of Next.js has allowed for more streamlined and efficient handling of server-side rendering and client-side navigation, contributing to a smoother overall user experience.
 
 ⭐ Through this project, I've deepened my expertise in TypeScript, enabling more robust and type-safe code structures.
-
-🪐 Furthermore, I've honed my skills in unit testing using Jest and Testing Library, ensuring the development of secure and optimized code.
 
 🎨 With this project a learn how to do a good use of the TailwindCSS to create eficient styles that gives scalability and smooth adaptation to design changes as the project progressed.
 
