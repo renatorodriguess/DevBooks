@@ -15,7 +15,7 @@
 <br /> 
 
   <p align="center">
-    Welcome to DevBooks – an immersive landing page dedicated to my passion of reading, meticulously crafted with an array of interactive components and cutting-edge functionalities. Explore the bookstore with engaging visuals and seamless user experiences. This project uses ReactJS, NextJS, Tailwind, and TypeScript, all converging harmoniously to provide a journey into the universe of programming books.
+    Welcome to DevBooks – an immersive landing page dedicated to selling books about programming, meticulously crafted with an array of interactive components and cutting-edge functionalities. Explore the bookstore with engaging visuals and seamless user experiences. This project uses ReactJS, NextJS, Tailwind, and TypeScript, all converging harmoniously to provide a journey into the universe of programming books.
     <br />
     <br />
     <a href="https://devbooks-project.vercel.app">View Deploy</a>
@@ -108,10 +108,9 @@ Project Link: [Vercel](https://devbooks-project.vercel.app)
 ## Acknowledgments
 
 * [Choose an Open Source License](https://choosealicense.com)
-* [Malven's Flexbox Cheatsheet](https://flexbox.malven.co/)
+* [Flowbite](https://flowbite.com)
 * [Img Shields](https://shields.io)
-* [Font Awesome](https://fontawesome.com)
-* [React Icons](https://react-icons.github.io/react-icons/search)
+* [AOS](https://michalsnik.github.io/aos/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -124,7 +123,7 @@ Project Link: [Vercel](https://devbooks-project.vercel.app)
 [forks-shield]: https://img.shields.io/github/forks/renatorodriguess/DevBooks.svg?style=for-the-badge
 [forks-url]: https://github.com/renatorodriguess/DevBooks/network/members
 [stars-shield]: https://img.shields.io/github/stars/renatorodriguess/DevBooks.svg?style=for-the-badge
-[stars-url]: https://github.com/renatorodriguess/astrohub/stargazers
+[stars-url]: https://github.com/renatorodriguess/DevBooks/stargazers
 [issues-shield]: https://img.shields.io/github/issues/renatorodriguess/DevBooks.svg?style=for-the-badge
 [issues-url]: https://github.com/renatorodriguess/DevBooks/issues
 [license-shield]: https://img.shields.io/github/license/renatorodriguess/DevBooks.svg?style=for-the-badge
