@@ -10,7 +10,7 @@ const [theme, setTheme] = useState (() => {
   if (typeof window !== 'undefined') {
     return localStorage.getItem('theme') || 'light';
   } else {
-    return 'light';
+    return 'dark';
   }
 })
 
@@ -25,9 +25,6 @@ useEffect(() => {
     }
   }
 }, [theme]);
-
-    
-
     return(
         <>
             <div className="relative md:ml-7">
@@ -41,7 +38,6 @@ useEffect(() => {
                 onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
                 />
             </div>
-        
         </>
     )
 }

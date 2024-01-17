@@ -51,9 +51,9 @@ const Books = () => {
               </div>
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-20 md:gap-5 place-items-center">
                 {booksData.map((data) => (
-                  <div key={data.id}
+                  <div onClick={handleOpenModal} key={data.id}
                     data-aos="zoom-in"
-                    className="rounded-2xl bg-white dark:bg-gray-800 hover:bg-primary dark:hover:bg-primary hover:text-white relative shadow-xl duration-high group max-w-[300px]"
+                    className="rounded-2xl bg-white dark:bg-gray-800 cursor-pointer hover:bg-primary dark:hover:bg-primary hover:text-white relative shadow-xl duration-high group max-w-[300px]"
                   >
                     <div className="h-[100px]">
                       <Image

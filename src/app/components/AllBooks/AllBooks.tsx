@@ -1,5 +1,8 @@
-import React from "react";
+'use client'
+
+import React, {useState} from "react";
 import Image from "next/image";
+import Modal from "../Modal/Modal";
 import Book4 from '../../../assets/books/book4.jpg'
 import Book5 from '../../../assets/books/book5.jpg'
 import Book6 from '../../../assets/books/book6.jpg'
@@ -45,9 +48,17 @@ const booksData = [
     },
     
   ];
-  
 
 const AllBooks = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleOpenModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+  };
     return <>
         <div className="py-10">
             <div className="container py-10 placeholder-gray-100">
@@ -58,7 +69,7 @@ const AllBooks = () => {
                 </div>
                 {/* card */}
                 <div data-aos="slide-up">
-                    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 place-items-center gap-5">
+                    <div onClick={handleOpenModal} className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 place-items-center gap-5 cursor-pointer">
                         {booksData.map((data) => (
                                 <div className="space-y-3 " key={data.id}>
                                     <Image src={data.img}  alt=""
@@ -73,7 +84,7 @@ const AllBooks = () => {
                                                 <span>{data.rating}</span>
                                         </div>
                                     </div>
-                                </div>
+                                </div>  
                         ))}
                     </div>
                 </div>
@@ -83,6 +94,7 @@ const AllBooks = () => {
                     </div>
                 </div>
             </div>
+            <Modal isOpen={isModalOpen} onClose={handleCloseModal} />
       </div>  
     </>
 }
