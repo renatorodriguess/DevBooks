@@ -1,7 +1,7 @@
 import React from "react";
+import Form from './Form'
 import { IoCloseOutline } from "react-icons/io5";
 import { ToastContainer } from 'react-toastify';
-import successOrderToast from './OrderMessage'
 import 'react-toastify/dist/ReactToastify.css';
 
 interface ModalProps {
@@ -28,30 +28,7 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose }) => {
               />
             </div>
           </div>
-          {/* Body */}
-          <div className="mt-4">
-            <input
-              type="text"
-              placeholder="Nome"
-              className="w-full rounded-full border bg-white border-gray-500 dark:border-gray-500 dark:bg-gray-800 px-2 py-1 mb-4"
-            />
-            <input
-              type="email"
-              placeholder="Email"
-              className="w-full rounded-full border bg-white border-gray-500  dark:border-gray-500 dark:bg-gray-800 px-2 py-1 mb-4"
-            />
-            <input
-              type="text"
-              placeholder="Endereço"
-              className="w-full rounded-full border bg-white border-gray-500  dark:border-gray-500 dark:bg-gray-800 px-2 py-1 mb-4"
-            />
-            {/* Restante dos inputs */}
-            <div onClick={successOrderToast} className="flex justify-center">
-              <button className="bg-gradient-to-r from-primary to-secondary hover:scale-105 duration-200 text-white py-1 px-4 rounded-full">
-                Pedir
-              </button>
-            </div>
-          </div>
+          <Form />
         </div>
       </div>
       <ToastContainer />

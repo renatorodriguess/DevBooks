@@ -1,5 +1,5 @@
 'use client'
-import React from 'react'
+import React, {useState} from 'react'
 import Navbar from './components/NavBar/Navbar'
 import Hero from './components/Hero/Hero'
 import Books from './components/Books/Books'
@@ -14,7 +14,7 @@ import 'aos/dist/aos.css'
 
 export default function Home() {
 
-  const [orderPopup, setOrderPopup] = React.useState(false);
+  const [orderPopup, setOrderPopup] = useState(false);
 
   const handleOrderPopup = (isOpen: boolean) => {
     setOrderPopup(isOpen);
