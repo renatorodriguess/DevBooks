@@ -1,5 +1,5 @@
 'use client'
-import React, {useState} from 'react'
+
 import Navbar from './components/NavBar/Navbar'
 import Hero from './components/Hero/Hero'
 import Books from './components/Books/Books'
@@ -11,6 +11,7 @@ import Footer from './components/Footer/Footer';
 import Modal from './components/Modal/Modal'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
+import React, {useState} from 'react'
 
 export default function Home() {
 

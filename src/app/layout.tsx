@@ -1,8 +1,9 @@
+
+import 'react-toastify/dist/ReactToastify.css';
+import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
-import './globals.css'
 import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -14,7 +15,7 @@ export const metadata: Metadata = {
   }
 }
 export function Message(){
-  const notify = () => toast("Wow so easy !");
+  const notify = () => toast("");
 
   return (
     <div>
