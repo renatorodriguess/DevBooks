@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   }
 }
 export function Message(){
-  const notify = () => toast("");
+  const notify = () => toast("DEPLOYMENT");
 
   return (
     <div>
