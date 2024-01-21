@@ -1,9 +1,9 @@
 'use client'
 
-import React, {useState, useEffect} from "react";
 import Image from "next/image";
 import darkPng from '../../../assets/website/dark-mode-button.png'
 import lightPng from '../../../assets/website/light-mode-button.png'
+import { useState, useEffect } from "react";
 
 const DarkMode = () => {
 const [theme, setTheme] = useState (() => {

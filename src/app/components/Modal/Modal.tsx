@@ -1,8 +1,9 @@
 import React from "react";
 import Form from './Form'
+import 'react-toastify/dist/ReactToastify.css';
 import { IoCloseOutline } from "react-icons/io5";
 import { ToastContainer } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+
 
 interface ModalProps {
   isOpen: boolean;
@@ -19,7 +20,7 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose }) => {
           {/* Header */}
           <div className="flex items-center justify-between">
             <div>
-              <h1>Escolha do Livro!</h1>
+              <h1>Preencha os campos!</h1>
             </div>
             <div>
               <IoCloseOutline

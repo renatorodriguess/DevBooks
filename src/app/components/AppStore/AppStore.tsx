@@ -17,6 +17,7 @@ const AppStore = () => {
         return (
           <>
             <div
+              id="app"
               data-aos="slide-up"
               className="bg-app-banner bg-gray-100 dark:bg-gray-800 text-white py-10"
               style={bannerImg}

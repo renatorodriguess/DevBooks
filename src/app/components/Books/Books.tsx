@@ -1,11 +1,12 @@
 'use client'
-import React, {useState} from "react";
+
+import Modal from '../Modal/Modal';
 import Image from "next/image";
 import Book1 from "../../../assets/books/book1.jpg";
 import Book2 from "../../../assets/books/book2.jpg";
 import Book3 from "../../../assets/books/book3.jpg";
+import { useState } from "react";
 import { FaStar } from "react-icons/fa6";
-import Modal from '../Modal/Modal';
 
 const booksData = [
     {
@@ -41,7 +42,7 @@ const Books = () => {
   };
     return (
         <>
-          <div className="py-10">
+          <div id='bestsellers' className="py-10">
             <div className="container">
               <div className="text-center mb-20 max-w-[400px] mx-auto">
                 <p className="text-sm bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary ">

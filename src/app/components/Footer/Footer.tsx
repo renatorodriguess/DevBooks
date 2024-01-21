@@ -1,7 +1,7 @@
 import React from "react";
+import footerLogo from "../../../assets/website/logo.png";
 import Image from "next/image";
 import { FaInstagram, FaFacebook, FaLinkedin, FaLocationArrow, FaMobileAlt} from "react-icons/fa";
-import footerLogo from "../../../assets/website/logo.png";
 
 const FooterLinks = [
     {
@@ -35,28 +35,28 @@ const Footer = () => {
               {/* company Details */}
               <div className=" py-8 px-4 ">
                 <h1 className="text-black dark:text-white sm:text-3xl text-xl font-bold sm:text-left text-justify mb-3 flex items-center gap-3">
-                  <Image src={footerLogo} alt="Logo" className="max-w-[50px] " />
-                  DevBooks
+                  <Image src={footerLogo} alt="Logo" className="max-w-[50px]  " />
+                  <span className="hover:text-primary cursor-pointer">DevBooks</span>
                 </h1>
                 <br />
-                <div className="flex items-center gap-3 text-black dark:text-white">
+                <div className="flex items-center gap-3 text-black dark:text-white hover:text-primary cursor-pointer">
                   <FaLocationArrow />
                   <p>São Paulo, Brasil</p>
                 </div>
-                <div className="flex items-center gap-3 mt-3 text-black dark:text-white">
+                <div className="flex items-center gap-3 mt-3 text-black dark:text-white hover:text-primary cursor-pointer">
                   <FaMobileAlt />
                   <p>+55 123456789</p>
                 </div>
                 {/* Social Handle */}
                 <div className="flex items-center gap-3 mt-6 text-black dark:text-white">
                   <a href="#">
-                    <FaInstagram className="text-3xl text-black dark:text-white" />
+                    <FaInstagram className="text-3xl text-black dark:text-white hover:text-primary" />
                   </a>
                   <a href="#">
-                    <FaFacebook className="text-3xl text-black dark:text-white" />
+                    <FaFacebook className="text-3xl text-black dark:text-white hover:text-primary" />
                   </a>
                   <a href="#">
-                    <FaLinkedin className="text-3xl text-black dark:text-white" />
+                    <FaLinkedin className="text-3xl text-black dark:text-white hover:text-primary" />
                   </a>
                 </div>
               </div>

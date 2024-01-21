@@ -11,6 +11,7 @@ import Person3 from '../../../assets/website/Person3.png'
 import Person4 from '../../../assets/website/Person4.png'
 import Person5 from '../../../assets/website/Person5.png'
 
+
 const testimonialData = [
   {
     id: 1,
@@ -86,8 +87,9 @@ const Testimonial = () => {
   };
     
     return <>
-        <div className="pb-10">
+        <div id="reviews" className="pb-10">
             <div className="container">
+
                 {/* Header */}
                 <div data-aos="fade-up" className="text-center mb-20 max-w-[400px] mx-auto">
                     <p className="text-sm bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">
@@ -95,6 +97,7 @@ const Testimonial = () => {
                     </p>
                     <h1 className="text-4xl font-bold text-black dark:text-white mt-3">Depoimentos</h1>
                 </div> 
+
                 {/* Card Section */}
                 <div data-aos="zoom-in">
                   <Slider {...settings}>

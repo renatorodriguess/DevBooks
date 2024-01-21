@@ -1,6 +1,5 @@
 'use client'
 
-import React, {useState} from "react";
 import Image from "next/image";
 import Modal from "../Modal/Modal";
 import Book4 from '../../../assets/books/book4.jpg'
@@ -9,6 +8,7 @@ import Book6 from '../../../assets/books/book6.jpg'
 import Book7 from '../../../assets/books/book7.jpg'
 import Book8 from '../../../assets/books/book8.jpg'
 import { FaStar } from "react-icons/fa6";
+import { useState } from "react";
 
 const booksData = [
     {
@@ -60,7 +60,7 @@ const AllBooks = () => {
     setIsModalOpen(false);
   };
     return <>
-        <div className="py-10">
+        <div id="trending" className="py-10">
             <div className="container py-10 placeholder-gray-100">
                 {/* header */}
                 <div data-aos="slide-up" className="text-center mb-20 max-w-[400px] mx-auto">
