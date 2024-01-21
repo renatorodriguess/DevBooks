@@ -1,7 +1,6 @@
 
 import 'react-toastify/dist/ReactToastify.css';
 import './globals.css'
-import React from "react"
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import { ToastContainer, toast } from 'react-toastify';
@@ -16,7 +15,7 @@ export const metadata: Metadata = {
   }
 }
 export function Message(){
-  const notify = () => toast("DEPLOYMENT");
+  const notify = () => toast("");
 
   return (
     <div>
