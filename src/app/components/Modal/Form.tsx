@@ -35,7 +35,7 @@ const Form = () => {
     };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form method='post' action="/users" onSubmit={handleSubmit}>
       <div className="mt-4">
         <input
           type="text"
