@@ -61,8 +61,11 @@ The DevBooks is a project that represents my passion for the code and the books.
 
 * [![Next][Next.js]][Next-url]
 * [![React][React.js]][React-url]
-* [![Sass][Sass.com]][Sass-url]
+* [![Tailwind][Tailwind.com]][Tailwind-url]
+* [![NodeJS][NodeJS.com]][NodeJS-url]
 * [![Typescript][Typescript.org]][Typescript-url]
+* [![MongoDB][MongoDB.com]][MongoDB-url]
+* [![Express][Express.com]][Express-url]
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -76,6 +79,11 @@ This project was a good challenge to improve my skills and challenge myself.
 ⭐ Through this project, I've deepened my expertise in TypeScript, enabling more robust and type-safe code structures.
 
 🎨 With this project a learn how to do a good use of the TailwindCSS to create eficient styles that gives scalability and smooth adaptation to design changes as the project progressed.
+
+⚡ I've gained proficiency in leveraging the Axios library for handling API requests, enhancing code stability and organization significantly.
+
+📦 I acquired advanced skills in using MongoDB as a NoSQL database management system, resulting in significant improvements in both efficiency and flexibility during data manipulation.
+
 
 <!-- CONTRIBUTING -->
 ## Contributing
@@ -135,7 +143,14 @@ Project Link: [Vercel](https://devbooks-project.vercel.app)
 [Next-url]: https://nextjs.org/
 [React.js]: https://img.shields.io/badge/React-000000?style=for-the-badge&logo=react&logoColor=61DAFB
 [React-url]: https://reactjs.org/
-[Sass.com]: https://img.shields.io/badge/Tailwind-000000?style=for-the-badge&logo=tailwindcss&logoColor=blue
-[Sass-url]: https://tailwindcss.com
+[Tailwind.com]: https://img.shields.io/badge/Tailwind-000000?style=for-the-badge&logo=tailwindcss&logoColor=blue
+[Tailwind-url]: https://tailwindcss.com
 [Typescript.org]: https://img.shields.io/badge/Typescript-000000?style=for-the-badge&logo=typescript&logoColor=blue
 [Typescript-url]: https://www.typescriptlang.org/
+[NodeJS.com]: https://img.shields.io/badge/Node.js-000000?style=for-the-badge&logo=node.js&logoColor=green
+[NodeJS-url]: https://nodejs.org/en
+[Express.com]: https://img.shields.io/badge/Express%20js-000000?style=for-the-badge&logo=express&logoColor=white
+[Express-url]: https://expressjs.com/pt-br/
+[MongoDB.com]: https://img.shields.io/badge/MongoDB-000000?style=for-the-badge&logo=mongodb&logoColor=green
+[MongoDB-url]: https://www.mongodb.com/pt-br
+
